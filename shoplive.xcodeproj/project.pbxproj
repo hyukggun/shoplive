@@ -22,6 +22,7 @@
 		11AE214B2C019553008B10D4 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE214A2C019553008B10D4 /* UICollectionView+.swift */; };
 		11AE214D2C019558008B10D4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE214C2C019558008B10D4 /* UIView+.swift */; };
 		11AE21512C019686008B10D4 /* CharacterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21502C019686008B10D4 /* CharacterInfoCell.swift */; };
+		11AE21542C019D65008B10D4 /* Bundle+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21532C019D65008B10D4 /* Bundle+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		11AE214A2C019553008B10D4 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		11AE214C2C019558008B10D4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		11AE21502C019686008B10D4 /* CharacterInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoCell.swift; sourceTree = "<group>"; };
+		11AE21522C019D4B008B10D4 /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		11AE21532C019D65008B10D4 /* Bundle+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,7 @@
 				11AE213E2C018A4F008B10D4 /* SearchCharactersViewController.swift */,
 				11AE21402C018A6E008B10D4 /* FavoriteCharactersViewController.swift */,
 				11AE21502C019686008B10D4 /* CharacterInfoCell.swift */,
+				11AE21522C019D4B008B10D4 /* Secrets.xcconfig */,
 			);
 			path = shoplive;
 			sourceTree = "<group>";
@@ -148,6 +152,7 @@
 				11AE21482C01954A008B10D4 /* UICollectionViewCell+.swift */,
 				11AE214A2C019553008B10D4 /* UICollectionView+.swift */,
 				11AE214C2C019558008B10D4 /* UIView+.swift */,
+				11AE21532C019D65008B10D4 /* Bundle+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -297,6 +302,7 @@
 				11AE214D2C019558008B10D4 /* UIView+.swift in Sources */,
 				11AE21412C018A6E008B10D4 /* FavoriteCharactersViewController.swift in Sources */,
 				11AE213F2C018A4F008B10D4 /* SearchCharactersViewController.swift in Sources */,
+				11AE21542C019D65008B10D4 /* Bundle+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -465,6 +471,7 @@
 		};
 		11AE21342C018933008B10D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AE21522C019D4B008B10D4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -493,6 +500,7 @@
 		};
 		11AE21352C018933008B10D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11AE21522C019D4B008B10D4 /* Secrets.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

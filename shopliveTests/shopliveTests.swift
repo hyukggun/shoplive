@@ -10,27 +10,17 @@ import XCTest
 
 final class shopliveTests: XCTestCase {
 
-    override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    func test_private_key() {
+        let privateKey = Bundle.main.PRIVATE_KEY
+        let expectedKey = "52a6ddab6bfaf0a823a079f74a280c1e"
+        XCTAssertTrue(privateKey == expectedKey)
+    }
+    
+    func test_public_key() {
+        let publicKey = Bundle.main.PUBLIC_KEY
+        let expectedKey = "179a56606259c592b91cb5f096d009e6cf06ec9c"
+        XCTAssertTrue(publicKey == expectedKey)
     }
 
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
-    }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
 
 }
