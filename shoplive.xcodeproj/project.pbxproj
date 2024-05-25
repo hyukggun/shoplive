@@ -28,6 +28,7 @@
 		11AE21632C01A902008B10D4 /* CharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21622C01A902008B10D4 /* CharacterType.swift */; };
 		11AE21652C01A90A008B10D4 /* CharacterImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21642C01A90A008B10D4 /* CharacterImageType.swift */; };
 		11AE216E2C01AD07008B10D4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE216D2C01AD07008B10D4 /* String+.swift */; };
+		11AE21702C01AD59008B10D4 /* stringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE216F2C01AD59008B10D4 /* stringExtensionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,8 @@
 		11AE21602C01A8FA008B10D4 /* CharacterDataContainerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDataContainerType.swift; path = shoplive/CharacterDataContainerType.swift; sourceTree = SOURCE_ROOT; };
 		11AE21622C01A902008B10D4 /* CharacterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterType.swift; path = shoplive/CharacterType.swift; sourceTree = SOURCE_ROOT; };
 		11AE21642C01A90A008B10D4 /* CharacterImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterImageType.swift; path = shoplive/CharacterImageType.swift; sourceTree = SOURCE_ROOT; };
+		11AE216D2C01AD07008B10D4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		11AE216F2C01AD59008B10D4 /* stringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				11AE21232C018933008B10D4 /* shopliveTests.swift */,
+				11AE216F2C01AD59008B10D4 /* stringExtensionTests.swift */,
 			);
 			path = shopliveTests;
 			sourceTree = "<group>";
@@ -337,6 +341,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE21702C01AD59008B10D4 /* stringExtensionTests.swift in Sources */,
 				11AE21242C018933008B10D4 /* shopliveTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
