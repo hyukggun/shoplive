@@ -27,6 +27,7 @@
 		11AE21612C01A8FA008B10D4 /* CharacterDataContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21602C01A8FA008B10D4 /* CharacterDataContainerType.swift */; };
 		11AE21632C01A902008B10D4 /* CharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21622C01A902008B10D4 /* CharacterType.swift */; };
 		11AE21652C01A90A008B10D4 /* CharacterImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21642C01A90A008B10D4 /* CharacterImageType.swift */; };
+		11AE216E2C01AD07008B10D4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE216D2C01AD07008B10D4 /* String+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -162,6 +163,7 @@
 				11AE214A2C019553008B10D4 /* UICollectionView+.swift */,
 				11AE214C2C019558008B10D4 /* UIView+.swift */,
 				11AE21532C019D65008B10D4 /* Bundle+.swift */,
+				11AE216D2C01AD07008B10D4 /* String+.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -322,6 +324,7 @@
 				11AE214B2C019553008B10D4 /* UICollectionView+.swift in Sources */,
 				11AE213D2C018A30008B10D4 /* HomeTabBarController.swift in Sources */,
 				11AE210F2C018931008B10D4 /* SceneDelegate.swift in Sources */,
+				11AE216E2C01AD07008B10D4 /* String+.swift in Sources */,
 				11AE214D2C019558008B10D4 /* UIView+.swift in Sources */,
 				11AE21412C018A6E008B10D4 /* FavoriteCharactersViewController.swift in Sources */,
 				11AE213F2C018A4F008B10D4 /* SearchCharactersViewController.swift in Sources */,
