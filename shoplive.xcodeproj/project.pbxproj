@@ -17,6 +17,7 @@
 		11AE213D2C018A30008B10D4 /* HomeTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE213C2C018A30008B10D4 /* HomeTabBarController.swift */; };
 		11AE213F2C018A4F008B10D4 /* SearchCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE213E2C018A4F008B10D4 /* SearchCharactersViewController.swift */; };
 		11AE21412C018A6E008B10D4 /* FavoriteCharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21402C018A6E008B10D4 /* FavoriteCharactersViewController.swift */; };
+		11AE21442C018E0E008B10D4 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 11AE21432C018E0E008B10D4 /* SnapKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE21442C018E0E008B10D4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = shoplive;
+			packageProductDependencies = (
+				11AE21432C018E0E008B10D4 /* SnapKit */,
+			);
 			productName = shoplive;
 			productReference = 11AE21092C018931008B10D4 /* shoplive.app */;
 			productType = "com.apple.product-type.application";
@@ -218,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 11AE21002C018931008B10D4;
+			packageReferences = (
+				11AE21422C018E0E008B10D4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = 11AE210A2C018931008B10D4 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -443,7 +451,6 @@
 				INFOPLIST_FILE = shoplive/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -472,7 +479,6 @@
 				INFOPLIST_FILE = shoplive/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -605,6 +611,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		11AE21422C018E0E008B10D4 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		11AE21432C018E0E008B10D4 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11AE21422C018E0E008B10D4 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 11AE21012C018931008B10D4 /* Project object */;
 }
