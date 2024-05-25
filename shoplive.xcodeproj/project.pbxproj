@@ -27,6 +27,8 @@
 		11AE21612C01A8FA008B10D4 /* CharacterDataContainerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21602C01A8FA008B10D4 /* CharacterDataContainerType.swift */; };
 		11AE21632C01A902008B10D4 /* CharacterType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21622C01A902008B10D4 /* CharacterType.swift */; };
 		11AE21652C01A90A008B10D4 /* CharacterImageType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21642C01A90A008B10D4 /* CharacterImageType.swift */; };
+		11AE21692C01AC8A008B10D4 /* MarvelAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21682C01AC8A008B10D4 /* MarvelAPI.swift */; };
+		11AE216C2C01ACC3008B10D4 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 11AE216B2C01ACC3008B10D4 /* Moya */; };
 		11AE216E2C01AD07008B10D4 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE216D2C01AD07008B10D4 /* String+.swift */; };
 		11AE21702C01AD59008B10D4 /* stringExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE216F2C01AD59008B10D4 /* stringExtensionTests.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,7 @@
 		11AE21602C01A8FA008B10D4 /* CharacterDataContainerType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterDataContainerType.swift; path = shoplive/CharacterDataContainerType.swift; sourceTree = SOURCE_ROOT; };
 		11AE21622C01A902008B10D4 /* CharacterType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterType.swift; path = shoplive/CharacterType.swift; sourceTree = SOURCE_ROOT; };
 		11AE21642C01A90A008B10D4 /* CharacterImageType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CharacterImageType.swift; path = shoplive/CharacterImageType.swift; sourceTree = SOURCE_ROOT; };
+		11AE21682C01AC8A008B10D4 /* MarvelAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarvelAPI.swift; sourceTree = "<group>"; };
 		11AE216D2C01AD07008B10D4 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		11AE216F2C01AD59008B10D4 /* stringExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stringExtensionTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE216C2C01ACC3008B10D4 /* Moya in Frameworks */,
 				11AE21442C018E0E008B10D4 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -126,6 +130,7 @@
 		11AE210B2C018931008B10D4 /* shoplive */ = {
 			isa = PBXGroup;
 			children = (
+				11AE21672C01AC81008B10D4 /* APIs */,
 				11AE21552C01A6F9008B10D4 /* Models */,
 				11AE21452C019538008B10D4 /* Extensions */,
 				11AE210C2C018931008B10D4 /* AppDelegate.swift */,
@@ -183,6 +188,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		11AE21672C01AC81008B10D4 /* APIs */ = {
+			isa = PBXGroup;
+			children = (
+				11AE21682C01AC8A008B10D4 /* MarvelAPI.swift */,
+			);
+			path = APIs;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -201,6 +214,7 @@
 			name = shoplive;
 			packageProductDependencies = (
 				11AE21432C018E0E008B10D4 /* SnapKit */,
+				11AE216B2C01ACC3008B10D4 /* Moya */,
 			);
 			productName = shoplive;
 			productReference = 11AE21092C018931008B10D4 /* shoplive.app */;
@@ -276,6 +290,7 @@
 			mainGroup = 11AE21002C018931008B10D4;
 			packageReferences = (
 				11AE21422C018E0E008B10D4 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				11AE216A2C01ACC3008B10D4 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = 11AE210A2C018931008B10D4 /* Products */;
 			projectDirPath = "";
@@ -319,6 +334,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE21692C01AC8A008B10D4 /* MarvelAPI.swift in Sources */,
 				11AE21512C019686008B10D4 /* CharacterInfoCell.swift in Sources */,
 				11AE210D2C018931008B10D4 /* AppDelegate.swift in Sources */,
 				11AE21612C01A8FA008B10D4 /* CharacterDataContainerType.swift in Sources */,
@@ -685,6 +701,14 @@
 				minimumVersion = 5.7.1;
 			};
 		};
+		11AE216A2C01ACC3008B10D4 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 15.0.3;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -692,6 +716,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 11AE21422C018E0E008B10D4 /* XCRemoteSwiftPackageReference "SnapKit" */;
 			productName = SnapKit;
+		};
+		11AE216B2C01ACC3008B10D4 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 11AE216A2C01ACC3008B10D4 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
