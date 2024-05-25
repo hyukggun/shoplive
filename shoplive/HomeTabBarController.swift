@@ -11,19 +11,15 @@ class HomeTabBarController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = .white
+        let searchCharacterVC = SearchCharactersViewController()
+        searchCharacterVC.title = "캐릭터 검색"
+        searchCharacterVC.tabBarItem = UITabBarItem(title: "Search Character", image: UIImage(systemName: "magnifyingglass"), selectedImage: UIImage(systemName: "magnifyingglass"))
+        
+        let favCharacterVC = FavoriteCharactersViewController()
+        favCharacterVC.title = "좋아하는 캐릭터들"
+        favCharacterVC.tabBarItem = UITabBarItem(title: "Favorite Characters", image: UIImage(systemName: "heart"), selectedImage: UIImage(systemName: "heart.fill"))
+        
+        viewControllers = [searchCharacterVC, favCharacterVC]
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
