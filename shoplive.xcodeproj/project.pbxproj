@@ -21,6 +21,7 @@
 		11AE21492C01954A008B10D4 /* UICollectionViewCell+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21482C01954A008B10D4 /* UICollectionViewCell+.swift */; };
 		11AE214B2C019553008B10D4 /* UICollectionView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE214A2C019553008B10D4 /* UICollectionView+.swift */; };
 		11AE214D2C019558008B10D4 /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE214C2C019558008B10D4 /* UIView+.swift */; };
+		11AE21512C019686008B10D4 /* CharacterInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21502C019686008B10D4 /* CharacterInfoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,7 @@
 		11AE21482C01954A008B10D4 /* UICollectionViewCell+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+.swift"; sourceTree = "<group>"; };
 		11AE214A2C019553008B10D4 /* UICollectionView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+.swift"; sourceTree = "<group>"; };
 		11AE214C2C019558008B10D4 /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
+		11AE21502C019686008B10D4 /* CharacterInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterInfoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				11AE213C2C018A30008B10D4 /* HomeTabBarController.swift */,
 				11AE213E2C018A4F008B10D4 /* SearchCharactersViewController.swift */,
 				11AE21402C018A6E008B10D4 /* FavoriteCharactersViewController.swift */,
+				11AE21502C019686008B10D4 /* CharacterInfoCell.swift */,
 			);
 			path = shoplive;
 			sourceTree = "<group>";
@@ -285,6 +288,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11AE21512C019686008B10D4 /* CharacterInfoCell.swift in Sources */,
 				11AE210D2C018931008B10D4 /* AppDelegate.swift in Sources */,
 				11AE21492C01954A008B10D4 /* UICollectionViewCell+.swift in Sources */,
 				11AE214B2C019553008B10D4 /* UICollectionView+.swift in Sources */,
