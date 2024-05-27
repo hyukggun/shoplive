@@ -12,14 +12,14 @@ final class shopliveTests: XCTestCase {
     
     let decoder = JSONDecoder()
 
-    func test_private_key() {
-        let privateKey = Bundle.main.PRIVATE_KEY
+    func test_public_key() {
+        let privateKey = Bundle.main.PUBLIC_KEY
         let expectedKey = "52a6ddab6bfaf0a823a079f74a280c1e"
         XCTAssertTrue(privateKey == expectedKey)
     }
     
-    func test_public_key() {
-        let publicKey = Bundle.main.PUBLIC_KEY
+    func test_private_key() {
+        let publicKey = Bundle.main.PRIVATE_KEY
         let expectedKey = "179a56606259c592b91cb5f096d009e6cf06ec9c"
         XCTAssertTrue(publicKey == expectedKey)
     }
@@ -58,7 +58,7 @@ final class shopliveTests: XCTestCase {
         """.data(using: .utf8)!
         
         do {
-            let dataContainer = try decoder.decode(MarvelCharacterDataContainer.self, from: data)
+            let dataContainer = try decoder.decode(CharacterDataContainer<MarvelCharacter>.self, from: data)
             XCTAssertTrue(dataContainer.offset == 0)
             XCTAssertTrue(dataContainer.limit == 20)
             XCTAssertTrue(dataContainer.total == 9)
@@ -88,7 +88,7 @@ final class shopliveTests: XCTestCase {
         """.data(using: .utf8)!
         
         do {
-            let dataContainer = try decoder.decode(MarvelCharacterDataContainer.self, from: data)
+            let dataContainer = try decoder.decode(CharacterDataContainer<MarvelCharacter>.self, from: data)
             XCTAssertTrue(dataContainer.offset == 0)
             XCTAssertTrue(dataContainer.limit == 20)
             XCTAssertTrue(dataContainer.total == 9)
@@ -128,7 +128,7 @@ final class shopliveTests: XCTestCase {
 """.data(using: .utf8)!
         
         do {
-            let characterDataWrapper = try decoder.decode(MarvelCharacterDataWrapper.self, from: data)
+            let characterDataWrapper = try decoder.decode(CharacterDataWrapper<MarvelCharacter>.self, from: data)
             XCTAssertTrue(characterDataWrapper.code != nil && characterDataWrapper.code! == 200)
             XCTAssertTrue(characterDataWrapper.status != nil && characterDataWrapper.status! == "Ok")
             XCTAssertNotNil(characterDataWrapper.data)
