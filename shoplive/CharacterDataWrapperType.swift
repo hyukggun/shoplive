@@ -19,9 +19,3 @@ struct CharacterDataWrapper<ComicsCharacter>: Decodable, CharacterDataWrapperTyp
     var status: String?
     var data: CharacterDataContainer<ComicsCharacter>?
 }
-
-struct MarvelCharacterDataWrapper: Decodable, CharacterDataWrapperType {
-    var code: Int?
-    var status: String?
-    var data: MarvelCharacterDataContainer?
-}

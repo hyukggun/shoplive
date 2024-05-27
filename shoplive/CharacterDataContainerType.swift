@@ -23,11 +23,3 @@ struct CharacterDataContainer<ComicsCharacter>: Decodable, CharacterDataContaine
     var count: Int
     var results: [ComicsCharacter]
 }
-
-struct MarvelCharacterDataContainer: Decodable, CharacterDataContainerType {
-    var offset: Int
-    var limit: Int
-    var total: Int
-    var count: Int
-    var results: [MarvelCharacter]
-}
