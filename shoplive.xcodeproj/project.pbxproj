@@ -43,6 +43,7 @@
 		11AE218F2C022866008B10D4 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 11AE218E2C022866008B10D4 /* RxCocoa */; };
 		11AE21912C022866008B10D4 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 11AE21902C022866008B10D4 /* RxSwift */; };
 		11AE21932C02298F008B10D4 /* AppStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21922C02298F008B10D4 /* AppStore.swift */; };
+		11AE21952C03529B008B10D4 /* FavoriteCharactersReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11AE21942C03529B008B10D4 /* FavoriteCharactersReactor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +97,7 @@
 		11AE21892C0220A0008B10D4 /* SearchCharactersViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCharactersViewState.swift; sourceTree = "<group>"; };
 		11AE218B2C02241D008B10D4 /* Moya+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Moya+.swift"; sourceTree = "<group>"; };
 		11AE21922C02298F008B10D4 /* AppStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStore.swift; sourceTree = "<group>"; };
+		11AE21942C03529B008B10D4 /* FavoriteCharactersReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteCharactersReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 				11AE21872C022028008B10D4 /* SearchCharactersReactor.swift */,
 				11AE21892C0220A0008B10D4 /* SearchCharactersViewState.swift */,
 				11AE21402C018A6E008B10D4 /* FavoriteCharactersViewController.swift */,
+				11AE21942C03529B008B10D4 /* FavoriteCharactersReactor.swift */,
 				11AE217F2C0217D0008B10D4 /* CharacterInfoCellModel.swift */,
 				11AE21502C019686008B10D4 /* CharacterInfoCell.swift */,
 				11AE21522C019D4B008B10D4 /* Secrets.xcconfig */,
@@ -389,6 +392,7 @@
 				11AE210D2C018931008B10D4 /* AppDelegate.swift in Sources */,
 				11AE21612C01A8FA008B10D4 /* CharacterDataContainerType.swift in Sources */,
 				11AE218A2C0220A0008B10D4 /* SearchCharactersViewState.swift in Sources */,
+				11AE21952C03529B008B10D4 /* FavoriteCharactersReactor.swift in Sources */,
 				11AE215F2C01A8F3008B10D4 /* CharacterDataWrapperType.swift in Sources */,
 				11AE21492C01954A008B10D4 /* UICollectionViewCell+.swift in Sources */,
 				11AE21632C01A902008B10D4 /* CharacterType.swift in Sources */,
