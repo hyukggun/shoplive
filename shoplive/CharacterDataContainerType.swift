@@ -16,6 +16,14 @@ protocol CharacterDataContainerType {
     var results: [ComicsCharacters] { get }
 }
 
+struct CharacterDataContainer<ComicsCharacter>: Decodable, CharacterDataContainerType where ComicsCharacter: Hashable & Decodable & CharacterType {
+    var offset: Int
+    var limit: Int
+    var total: Int
+    var count: Int
+    var results: [ComicsCharacter]
+}
+
 struct MarvelCharacterDataContainer: Decodable, CharacterDataContainerType {
     var offset: Int
     var limit: Int

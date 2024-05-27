@@ -15,9 +15,17 @@ protocol CharacterType {
     var thumbnail: Thumbnail { get }
 }
 
-struct MarvelCharacter: Codable, CharacterType {
+struct MarvelCharacter: Codable, Hashable, CharacterType {
     var id: Int
     var name: String
     var description: String
     var thumbnail: CharacterThumbnailImage
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(id)
+    }
+    
+    static func ==(lhs: MarvelCharacter, rhs: MarvelCharacter) -> Bool {
+        lhs.hashValue == rhs.hashValue
+    }
 }

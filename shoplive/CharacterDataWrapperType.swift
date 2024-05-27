@@ -14,6 +14,12 @@ protocol CharacterDataWrapperType {
     var data: ComicsCharacterDataContainer? { get }
 }
 
+struct CharacterDataWrapper<ComicsCharacter>: Decodable, CharacterDataWrapperType where ComicsCharacter: Decodable & Hashable & CharacterType {
+    var code: Int?
+    var status: String?
+    var data: CharacterDataContainer<ComicsCharacter>?
+}
+
 struct MarvelCharacterDataWrapper: Decodable, CharacterDataWrapperType {
     var code: Int?
     var status: String?

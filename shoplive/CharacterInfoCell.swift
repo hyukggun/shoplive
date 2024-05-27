@@ -4,14 +4,18 @@
 //
 //  Created by hyukmac on 5/24/24.
 //
+
+import NukeUI
 import SnapKit
 import UIKit
 
-class CharacterInfoCell: UICollectionViewCell {
+class CharacterInfoCell<ComicsCharacter>: UICollectionViewCell where ComicsCharacter: CharacterType {
+    
+    typealias CellModel = CharacterInfoCellModel<ComicsCharacter>
     
     private let container = UIView()
     
-    private let characterImageView = UIImageView()
+    private let characterImageView = LazyImageView()
     
     private let characterNameLabel = UILabel()
     
@@ -33,10 +37,6 @@ class CharacterInfoCell: UICollectionViewCell {
             .borderWidth(1)
             .borderColor(.systemGray)
         contentView.clipsToBounds = true
-        
-        characterImageView.backgroundColor = .systemPink
-        characterNameLabel.text = "캐릭터 이름"
-        characterDescriptionLabel.text = "캐릭터 설명입니다."
         
         container.snp.makeConstraints {
             $0.edges.equalToSuperview()
@@ -72,4 +72,21 @@ class CharacterInfoCell: UICollectionViewCell {
             $0.bottom.horizontalEdges.equalToSuperview()
         }
     }
+    
+    func setCharacterInfo(_ character: ComicsCharacter) {
+        characterNameLabel.text = character.name
+        characterDescriptionLabel.text = character.description
+        characterImageView.placeholderView = UIActivityIndicatorView()
+        characterImageView.url = character.thumbnail.imageURL
+    }
+    
+    func setCellModel(_ cellModel: CellModel) {
+        characterNameLabel.text = cellModel.characterInfo.name
+        characterDescriptionLabel.text = cellModel.characterInfo.description
+        characterImageView.placeholderView = UIActivityIndicatorView()
+        characterImageView.url = cellModel.characterInfo.thumbnail.imageURL
+        contentView.backgroundColor = cellModel.isSelected ? .systemGray : .clear
+    }
 }
+
+typealias MarvelCharacterInfoCell = CharacterInfoCell<MarvelCharacter>
