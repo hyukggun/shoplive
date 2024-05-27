@@ -12,7 +12,7 @@ class SearchCharactersReactor<ComicsCharacter>: Reactor where ComicsCharacter: C
     typealias State = SearchCharactersViewState<ComicsCharacter>
     typealias DataWrapper = CharacterDataWrapper<ComicsCharacter>
     
-    private let apiProvider = marvelAPIProvider(true)
+    private let apiProvider = marvelAPIProvider(false)
     
     enum Action {
         case setNamePrefix(nameStartsWith: String)

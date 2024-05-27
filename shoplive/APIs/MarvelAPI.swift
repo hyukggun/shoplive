@@ -97,7 +97,11 @@ enum MarvelAPI: TargetType {
 typealias MarvelAPIProvider = MoyaProvider<MarvelAPI>
 
 func marvelAPIProvider(_ isDebugMode: Bool) -> MarvelAPIProvider {
-    MarvelAPIProvider(plugins: [
-        NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose))
-    ])
+    if isDebugMode {
+        return MarvelAPIProvider(plugins: [
+            NetworkLoggerPlugin(configuration: NetworkLoggerPlugin.Configuration(logOptions: .verbose))
+        ])
+    } else {
+        return MarvelAPIProvider()
+    }
 }
