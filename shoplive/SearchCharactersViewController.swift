@@ -12,8 +12,12 @@ import RxSwift
 import SnapKit
 import UIKit
 
-class SearchCharactersViewController: UIViewController, View {
-    typealias Reactor = SearchCharactersReactor<MarvelCharacter>
+class SearchCharactersViewController<ComicsCharacter>: UIViewController,
+                                                       View,
+                                                       UICollectionViewDataSource,
+                                                       UICollectionViewDelegate,
+                                                       UICollectionViewDelegateFlowLayout where ComicsCharacter: Codable & Hashable & CharacterType {
+    typealias Reactor = SearchCharactersReactor<ComicsCharacter>
     
     private enum Constant {
         static var minimumLineSpacing: CGFloat {
@@ -32,7 +36,7 @@ class SearchCharactersViewController: UIViewController, View {
     
     private let activityView = UIActivityIndicatorView()
     
-    private var cellModels: [MarvelCharacterInfoCellModel] = []
+    private var cellModels: [CharacterInfoCellModel<ComicsCharacter>] = []
     
     private var cancelBag = Set<AnyCancellable>()
     
@@ -107,15 +111,13 @@ class SearchCharactersViewController: UIViewController, View {
             .disposed(by: disposeBag)
             
     }
-}
-
-extension SearchCharactersViewController: UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         cellModels.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let characterInfoCell: MarvelCharacterInfoCell = collectionView.deque(for: indexPath)
+        let characterInfoCell: CharacterInfoCell<ComicsCharacter> = collectionView.deque(for: indexPath)
         characterInfoCell.setCellModel(cellModels[indexPath.item])
         return characterInfoCell
     }
@@ -143,3 +145,5 @@ extension SearchCharactersViewController: UICollectionViewDataSource, UICollecti
         Constant.minimumLineSpacing
     }
 }
+
+typealias SearchMarvelCharactersViewController = SearchCharactersViewController<MarvelCharacter>

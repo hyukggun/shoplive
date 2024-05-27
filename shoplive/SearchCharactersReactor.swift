@@ -123,3 +123,5 @@ class SearchCharactersReactor<ComicsCharacter>: Reactor where ComicsCharacter: C
         }
     }
 }
+
+typealias SearchMarvelCharactersReactor = SearchCharactersReactor<MarvelCharacter>

@@ -11,9 +11,9 @@ import UIKit
 
 class HomeTabBarController: UITabBarController {
     
-    private let searchCharactersVC = SearchCharactersViewController()
+    private let searchCharactersVC = SearchMarvelCharactersViewController()
     
-    private let searchCharactersReactor = SearchCharactersReactor<MarvelCharacter>()
+    private let searchCharactersReactor = SearchMarvelCharactersReactor()
     
     private let favCharactersVC = FavoriteMarvelCharactersViewController()
     
